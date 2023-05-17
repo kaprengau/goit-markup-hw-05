@@ -371,9 +371,12 @@ img {
   align-items: center;
   background-color: var(--primary-color);
   border-radius: 50%;
+  transition: border-color 24ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-icon-item {
+  fill: currentColor;
 }
 
 .team-icon-link:hover,
@@ -425,6 +428,8 @@ img {
   padding: 16px 32px;
   border: 1px solid #8e8f99;
   color: #8e8f99;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .customers-item-icon {
@@ -517,6 +522,7 @@ img {
   align-items: center;
   background-color: var(--primary-color);
   border-radius: 50%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-icon-item {
@@ -541,9 +547,11 @@ img {
 
 .modal {
   width: 408px;
-  min-height: 584px;
+  min-height: 576px;
   background: #fcfcfc;
   border-radius: 4px;
+  background-color: rgba(46, 47, 66, 0.4);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   position: absolute;
@@ -551,11 +559,17 @@ img {
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 24px;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-clouse {
-  border: 1px solit #8e8f99;
+  position: absolute;
+  border: 1px solid rgba(0, 0, 0, 0.1);
   background: transparent;
+  padding: 0;
+  top: 24px;
+  right: 24px;
   width: 24px;
   height: 24px;
   display: flex;
@@ -563,12 +577,38 @@ img {
   align-items: center;
   border-radius: 50%;
   margin-left: auto;
+  background-color: #e7e9fc;
+  cursor: pointer;
+  background-color: 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-clouse:hover,
+.modal-clouse:focus {
+  background-color: #404bbf;
+  border: none;
+  background-color: #404bbf;
+  border: none;
+}
+
+.modal-svg {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-svg:hover,
+.modal-svg:focus {
+  fill: #ffffff;
 }
 
 .is-hidden {
   opacity: 0;
   pointer-events: 0;
   visibility: hidden;
+  pointer-events: none;
+}
+
+.data-modal-open {
+  background-color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /*!-------------------Portfolio------------------------ */
