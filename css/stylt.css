@@ -150,6 +150,35 @@ img {
 .header-tel {
 }
 
+.header-studio {
+  position: relative;
+}
+
+.header-studio::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: #404bbf;
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+}
+
+.header-portfolio {
+  position: relative;
+}
+
+.header-portfolio::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: #404bbf;
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+}
 /* ---------------Hero------------ */
 
 .hero {
@@ -547,8 +576,7 @@ img {
   width: 100%;
   height: 100%;
   background-color: rgba(46, 47, 66, 0.4);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal {
@@ -711,8 +739,8 @@ img {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.content-photo-link:hover,
-.content-photo-link:focus {
+.content-photo-link:hover .photo-text-cover,
+.content-photo-link:focus .photo-text-cover {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   transform: translateY(0%);
@@ -723,10 +751,6 @@ img {
   overflow: hidden;
 }
 
-.content-photo-cover:hover,
-.content-photo-cover:focus {
-}
-
 .photo-text-cover {
   position: absolute;
   top: 0;
@@ -734,9 +758,30 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--white-futer-color);
+  background-color: #4d5ae5;
   padding: 40px 32px;
   height: 100%;
   width: 100%;
   transform: translateY(100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+/* .photo-text-cover:hover,
+.photo-text-cover:focus {
+  transform: translateY(0%);
+} */
+
+/* .content-photo-link {
+  position: relative;
+}
+
+.content-photo-link::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: black;
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+} */
