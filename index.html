@@ -43,9 +43,14 @@
             </li>
           </ul>
         </nav>
+        <button class="menu-open-btn button" type="button" data-menu-open>
+          <svg class="menu-open-icon" width="32" height="22">
+            <use href="./images/icons.svg#icon-menu-burger"></use>
+          </svg>
+        </button>
 
         <address class="header-address">
-          <ul class="header-list list">
+          <ul class="header-adress-list list">
             <li class="header-mail item">
               <a
                 class="header-adress-link link"
@@ -60,6 +65,91 @@
             </li>
           </ul>
         </address>
+        <div class="mob-menu is-hidden" data-menu="">
+          <button class="menu-close-btn button" type="button" data-menu-close>
+            <svg class="menu-close-icon" width="8" height="8">
+              <use href="./images/icons.svg#icon-close-modal"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="mob-menu is-hidden" data-menu>
+        <button class="menu-close-btn button" type="button" data-menu-close>
+          <svg class="menu-close-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close-modal"></use>
+          </svg>
+        </button>
+
+        <div class="contact-mob-inner">
+          <ul class="mob-menu-list list">
+            <li class="mob-menu-item">
+              <a class="mob-menu-link link active" href="./index.html"
+                >Studio</a
+              >
+            </li>
+            <li class="mob-menu-item">
+              <a class="mob-menu-link link" href="./portfolio.html"
+                >Portfolio</a
+              >
+            </li>
+            <li class="mob-menu-item">
+              <a class="mob-menu-link link" href="">Contacts</a>
+            </li>
+          </ul>
+
+          <div>
+            <address class="contact-mob">
+              <ul class="contact-mob-list list">
+                <li class="contact-mob-number">
+                  <a
+                    class="contact-mob-link contact-mob-link-number link"
+                    href="tel:+110001111111"
+                  >
+                    +11 (000) 111-11-11</a
+                  >
+                </li>
+                <li class="contact-mob-mail">
+                  <a
+                    class="contact-mob-link contact-mob-link-mail link"
+                    href="mailto:info@devstudio.com"
+                    >info@devstudio.com</a
+                  >
+                </li>
+              </ul>
+            </address>
+
+            <ul class="social-mob-list list">
+              <li class="social-mob-item link">
+                <a class="social-mob-link" href="#">
+                  <svg class="social-mob-icon" width="24" height="20">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-mob-item link">
+                <a class="social-mob-link" href="#">
+                  <svg class="social-mob-icon" width="24" height="20">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-mob-item link">
+                <a class="social-mob-link" href="#">
+                  <svg class="social-mob-icon" width="24" height="20">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-mob-item link">
+                <a class="social-mob-link" href="#">
+                  <svg class="social-mob-icon" width="24" height="20">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
 
@@ -113,7 +203,6 @@
                 growth opportunities and minimize risk.
               </p>
             </li>
-
             <li class="adv-item">
               <div class="adv-icon">
                 <svg class="" width="64" height="64">
@@ -384,7 +473,7 @@
 
       <!--------------------Зробитик Колір ---------------- -->
     </main>
-    <footer class="footer container-footer">
+    <footer class="footer">
       <div class="container container-footer">
         <div class="footer-wraper">
           <a class="footer-logo link" href="./index.html"
@@ -536,6 +625,21 @@
         </form>
       </div>
     </div>
+
+    <div
+      class="backdrop is-hidden .js-menu-container"
+      .js-menu-container
+      id="mobile-menu"
+    >
+      <div class="phone-modal">
+        <button type="button" class="modal-clouse" js-close-menu>
+          <svg width="8" height="8" class="modal-svg">
+            <use href="./images/symbol-defs.svg#clouse"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
