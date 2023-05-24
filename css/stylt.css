@@ -56,16 +56,16 @@ ol {
   padding-right: 20px;
 }
 
+.button {
+  border: none;
+}
+
 @media screen and (min-width: 428px) {
   .container {
     padding-left: 16px;
     padding-right: 16px;
     max-width: 428px;
   }
-}
-@media screen and (min-width: 768px) {
-}
-@media screen and (min-width: 1158px) {
 }
 
 .list {
@@ -133,7 +133,10 @@ img {
 }
 .header-link:hover,
 .header-link:focus {
-  color: #404bbf;
+}
+.mob-menu-link:hover,
+.mob-menu-link:focus {
+  color: var(--hover-color);
 }
 
 .header-address {
@@ -203,6 +206,121 @@ img {
   border-radius: 2px;
 }
 
+.mob-menu {
+  width: 100vw;
+  height: 100vh;
+  padding: 24px 24px 40px 40px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-color: var(--white-color);
+  overflow: auto;
+}
+
+.menu-open-btn {
+  background-color: transparent;
+}
+
+.menu-open-icon {
+  stroke: var(--font-color);
+}
+
+.menu-close-btn {
+  width: 24px;
+  height: 24px;
+  margin-left: auto;
+  border-radius: 50%;
+  border: 1px solid #e7e9fc;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mob-menu-list {
+  margin-bottom: 48px;
+}
+
+.mob-menu-item:not(:last-child) {
+  margin-bottom: 30px;
+}
+.mob-menu-link {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  color: var(--font-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  text-decoration: none;
+}
+
+.mob-menu-link:hover,
+.mob-menu-link:focus {
+  color: var(--hover-color);
+}
+
+.contact-mob {
+  margin-bottom: 48px;
+}
+
+.contact-mob-inner {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.contact-mob-number {
+  margin-bottom: 26px;
+}
+
+.contact-mob-link-number {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--primary-color);
+}
+.contact-mob-link-mail {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--dark-color);
+}
+.contact-mob-link-number {
+  font-size: 36px;
+}
+
+.social-mob-list {
+  display: flex;
+  gap: 30px;
+}
+
+.social-mob-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-mob-link:hover,
+.social-mob-link:focus {
+  background-color: var(--hover-color);
+}
+
+.social-mob-icon {
+  display: flex;
+  fill: var(--dark-white-color);
+}
 
 /* ---------------Hero------------ */
 
