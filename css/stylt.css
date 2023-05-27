@@ -1549,7 +1549,7 @@ img {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(/images/hero.jpg);
+      url(./images/hero.jpg);
     width: 100%;
     max-width: 1440px;
     background-repeat: no-repeat;
@@ -1565,7 +1565,7 @@ img {
           rgba(46, 47, 66, 0.7),
           rgba(46, 47, 66, 0.7)
         ),
-        url(../images/hero-2x.jpg);
+        url(./images/hero-2x.jpg);
     }
   }
 
